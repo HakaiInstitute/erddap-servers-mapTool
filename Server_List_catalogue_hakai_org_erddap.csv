@@ -1,0 +1,21 @@
+,Dataset ID,latitude degrees_north,longitude degrees_east,sea_water_practical_salinity,sea_water_temperature,cdm_data_type,server
+0,HakaiSewardBoL5min,60.0992,-149.4428,,"TSG_T_Med,TSG_T_Avg,TSG_T_Min,TSG_T_Std,TSG_T_Max",TimeSeries,https://catalogue.hakai.org/erddap
+0,HakaiKetchikanBoL5min,55.315,-131.5954,,"TSG_T_Med,TSG_T_Avg,TSG_T_Min,TSG_T_Std,TSG_T_Max",TimeSeries,https://catalogue.hakai.org/erddap
+0,HakaiKodiakBoL5min,57.79,-152.41,,"TSG_T_Med,TSG_T_Avg,TSG_T_Min,TSG_T_Std,TSG_T_Max",TimeSeries,https://catalogue.hakai.org/erddap
+0,HakaiCTDDFO2,51.5208,-127.5583,salinity,temperature,TimeSeries,https://catalogue.hakai.org/erddap
+0,HakaiCTDFZH01,51.6394,-127.8958,salinity,temperature,TimeSeries,https://catalogue.hakai.org/erddap
+0,HakaiCTDKC10,51.6505,-127.9516,salinity,temperature,TimeSeries,https://catalogue.hakai.org/erddap
+0,HakaiCTDPRUTH,51.6554,-128.0913,salinity,temperature,TimeSeries,https://catalogue.hakai.org/erddap
+0,HakaiCTDQCS01,51.705,-128.2384,salinity,temperature,TimeSeries,https://catalogue.hakai.org/erddap
+0,HakaiCTDQU20,50.08,-125.1,salinity,temperature,TimeSeries,https://catalogue.hakai.org/erddap
+0,HakaiCTDQU29,50.2536,-125.1885,salinity,temperature,TimeSeries,https://catalogue.hakai.org/erddap
+0,HakaiCTDQU34,50.12,-125.1,salinity,temperature,TimeSeries,https://catalogue.hakai.org/erddap
+0,HakaiCTDQU38,50.1172,-125.2226,salinity,temperature,TimeSeries,https://catalogue.hakai.org/erddap
+0,HakaiCTDQU39,50.0307,-125.0992,salinity,temperature,TimeSeries,https://catalogue.hakai.org/erddap
+0,HakaiCTDQU43,50.33921037,-125.1176375,salinity,temperature,TimeSeries,https://catalogue.hakai.org/erddap
+0,HakaiBaynesSoundBoL5min,49.4716,-124.7927,,"TSG_T_Med,TSG_T_Avg,TSG_T_Min,TSG_T_Std,TSG_T_Max",TimeSeries,https://catalogue.hakai.org/erddap
+0,HakaiQuadraBoL5min,50.11600000000001,-125.22200000000001,,"TSG_T_Med,TSG_T_Avg,TSG_T_Min,TSG_T_Std,TSG_T_Max",TimeSeries,https://catalogue.hakai.org/erddap
+0,HakaiQuadraLimpet5min,50.11736,-125.22003000000001,,"WaterTemp_Avg,WaterTemp_Std",TimeSeries,https://catalogue.hakai.org/erddap
+0,HakaiQuadraWeather5min,50.1162556,-125.2221111,,,TimeSeries,https://catalogue.hakai.org/erddap
+0,HakaiKCBuoy1hour,51.6499,-127.9663,,"WaterTemp_Med,WaterTemp_Min,WaterTemp_Avg,WaterTemp,WaterTemp_Std,WaterTemp_Max",TimeSeries,https://catalogue.hakai.org/erddap
+0,HakaiSitkaBoL5min,57.0526,-135.3456,,"TSG_T_Med,TSG_T_Avg,TSG_T_Min,TSG_T_Std,TSG_T_Max",TimeSeries,https://catalogue.hakai.org/erddap
