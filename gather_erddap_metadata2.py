@@ -1,4 +1,5 @@
 import pandas as pd
+import numpy as np
 from erddapy import ERDDAP
 import re
 
@@ -29,6 +30,8 @@ def get_standard_variables_and_metadata(server_link, standard_variable_list):
           'min_lat': -90.0, 'max_lat': 90.0,
           'min_time': '', 'max_time': '',
           'cdm_data_type': ''}
+
+    variable_to_groupby = [('latitude', 'degrees_north'), ('longitude', 'degrees_east')]
 
     # Get available datasets from that server
     search_url = e.get_search_url(response='csv', **kw)
@@ -63,8 +66,7 @@ def get_standard_variables_and_metadata(server_link, standard_variable_list):
             data = pd.read_csv(distinctMinMaxTime_url, header=[0, 1])
 
             # Group data by latitude/longitude and get min max values
-            data_reduced = data.groupby(by=[('latitude', 'degrees_north'),
-                                            ('longitude', 'degrees_east')]).agg(['min', 'max'])
+            data_reduced = data.groupby(by=variable_to_groupby).agg(['min', 'max']).reset_index()
 
             if info[(info['Variable Name'] == 'depth')].size > 0:
                 latlongdepth_url = e.get_download_url(dataset_id=row['Dataset ID'],
@@ -80,12 +82,10 @@ def get_standard_variables_and_metadata(server_link, standard_variable_list):
                 data_depth = pd.read_csv(distinctMinMaxDepth_url, header=[0, 1])
 
                 # Group depth data by lat/long and get min max values
-                data_depth_reduced = data_depth.groupby(by=[('latitude', 'degrees_north'),
-                                                            ('longitude', 'degrees_east')]
-                                                        ).agg(['min', 'max'])
+                data_depth_reduced = data_depth.groupby(by=variable_to_groupby).agg(['min', 'max']).reset_index()
 
                 # Merge depth values with time
-                data_reduced = data_reduced.merge(data_depth_reduced, left_index=True, right_index=True)
+                data_reduced = data_reduced.merge(data_depth_reduced, on=variable_to_groupby, how='left')
 
             # Merge multi index column names
             data_reduced.columns = data_reduced.columns.map(' '.join).str.strip(' ')
@@ -104,18 +104,18 @@ def get_standard_variables_and_metadata(server_link, standard_variable_list):
             # If min/max lat/long are the same don't go in the dataset
             if (min_latitude == max_latitude) & (min_longitude == max_longitude):
                 data_reduced = pd.DataFrame(columns=['Dataset ID'])
+                data_reduced = {}
                 data_reduced['latitude degrees_north'] = min_latitude
                 data_reduced['longitude degrees_east'] = min_longitude
 
-                if attribute_table.filter('depth').size > 0 and 'actual_range' in attribute_table['depth'] and ('m' == attribute_table['depth','units']):
+                if 'depth' in attribute_table.columns and 'actual_range' in attribute_table['depth'] and ('m' == attribute_table['depth', 'units']['Value']):
 
-                        depth_range = attribute_table['depth', 'actual_range']['Value']
-                        data_reduced['depth m min']
-                        data_reduced['depth m max']
+                        depth_range = np.array(str.split(attribute_table['depth', 'actual_range']['Value'], ',')).astype(np.float)
+                        data_reduced['depth m min'] = depth_range[0]
+                        data_reduced['depth m max'] = depth_range[1]
 
-
-                data_reduced = data_reduced.set_index(['latitude degrees_north', 'longitude degrees_east'])
-
+                # Convert to DataFrame
+                data_reduced = pd.DataFrame(data_reduced, index=[0])
                 print('Retrieved metadata')
             else:
                 # Won't handle data with multiple location that it can't retrieve the data
@@ -134,7 +134,7 @@ def get_standard_variables_and_metadata(server_link, standard_variable_list):
         # Merge that dataset ID with previously downloaded data
         df = df.append(data_reduced)
 
-    # Add server to dataframe
+    # Add server to dataFrame
     df['server'] = e.server
 
     # Save resulting dataframe to a CSV, file name is based on the server address
