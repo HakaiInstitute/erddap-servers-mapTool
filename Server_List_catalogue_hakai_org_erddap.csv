@@ -1,11 +1,21 @@
-,Dataset ID,time UTC min,time UTC max,sea_water_practical_salinity,sea_water_temperature,cdm_data_type,depth m min,depth m max,server
-"(60.0992, -149.4428)",HakaiSewardBoL5min,2020-04-16T23:55:00Z,2020-06-15T23:15:00Z,,"TSG_T_Avg,TSG_T_Med,TSG_T_Min,TSG_T_Std,TSG_T_Max",TimeSeries,,,https://catalogue.hakai.org/erddap
-"(57.79, -152.41)",HakaiKodiakBoL5min,2020-04-16T23:55:00Z,2020-05-04T18:00:00Z,,"TSG_T_Avg,TSG_T_Med,TSG_T_Min,TSG_T_Std,TSG_T_Max",TimeSeries,,,https://catalogue.hakai.org/erddap
-"(51.5208, -127.5583)",HakaiCTDDFO2,2013-04-08T21:33:46Z,2018-09-14T19:39:04Z,salinity,temperature,TimeSeries,-9.990000000000001e-29,329.264,https://catalogue.hakai.org/erddap
-"(51.6394, -127.8958)",HakaiCTDFZH01,2013-04-01T19:19:32Z,2019-01-21T19:22:20Z,salinity,temperature,TimeSeries,-9.990000000000001e-29,301.973,https://catalogue.hakai.org/erddap
-"(51.6505, -127.9516)",HakaiCTDKC10,2012-06-07T22:39:28Z,2019-03-13T17:31:37Z,salinity,temperature,TimeSeries,-9.990000000000001e-29,365.343,https://catalogue.hakai.org/erddap
-"(49.4716, -124.7927)",HakaiBaynesSoundBoL5min,2020-04-16T23:55:00Z,2020-06-15T23:15:00Z,,"TSG_T_Avg,TSG_T_Med,TSG_T_Min,TSG_T_Std,TSG_T_Max",TimeSeries,,,https://catalogue.hakai.org/erddap
-"(50.11600000000001, -125.22200000000001)",HakaiQuadraBoL5min,2020-04-16T23:55:00Z,2020-06-15T23:15:00Z,,"TSG_T_Avg,TSG_T_Med,TSG_T_Min,TSG_T_Std,TSG_T_Max",TimeSeries,,,https://catalogue.hakai.org/erddap
-"(50.1162556, -125.2221111)",HakaiQuadraWeather5min,2020-04-16T23:55:00Z,2020-06-15T23:15:00Z,,,TimeSeries,,,https://catalogue.hakai.org/erddap
-"(51.6499, -127.9663)",HakaiKCBuoy1hour,2020-04-17T00:00:00Z,2020-06-15T23:00:00Z,,"WaterTemp_Min,WaterTemp_Avg,WaterTemp,WaterTemp_Std,WaterTemp_Med,WaterTemp_Max",TimeSeries,,,https://catalogue.hakai.org/erddap
-"(57.0526, -135.3456)",HakaiSitkaBoL5min,2020-04-16T23:55:00Z,2020-04-23T18:40:00Z,,"TSG_T_Avg,TSG_T_Med,TSG_T_Min,TSG_T_Std,TSG_T_Max",TimeSeries,,,https://catalogue.hakai.org/erddap
+,Dataset ID,latitude degrees_north,longitude degrees_east,time UTC min,time UTC max,sea_water_practical_salinity,sea_water_temperature,cdm_data_type,depth m min,depth m max,server
+0,HakaiSewardBoL5min,60.0992,-149.4428,2020-04-18T06:05:00Z,2020-06-17T05:15:00Z,,"TSG_T_Avg,TSG_T_Med,TSG_T_Min,TSG_T_Std,TSG_T_Max",TimeSeries,,,https://catalogue.hakai.org/erddap
+0,HakaiKetchikanBoL5min,55.315,-131.5954,,,,"TSG_T_Avg,TSG_T_Med,TSG_T_Min,TSG_T_Std,TSG_T_Max",TimeSeries,,,https://catalogue.hakai.org/erddap
+0,HakaiKodiakBoL5min,57.79,-152.41,2020-04-18T06:05:00Z,2020-05-04T18:00:00Z,,"TSG_T_Avg,TSG_T_Med,TSG_T_Min,TSG_T_Std,TSG_T_Max",TimeSeries,,,https://catalogue.hakai.org/erddap
+0,HakaiCTDDFO2,51.5208,-127.5583,2013-04-08T21:33:46Z,2018-09-14T19:39:04Z,salinity,temperature,TimeSeries,-9.990000000000001e-29,329.264,https://catalogue.hakai.org/erddap
+0,HakaiCTDFZH01,51.6394,-127.8958,2013-04-01T19:19:32Z,2019-01-21T19:22:20Z,salinity,temperature,TimeSeries,-9.990000000000001e-29,301.973,https://catalogue.hakai.org/erddap
+0,HakaiCTDKC10,51.6505,-127.9516,2012-06-07T22:39:28Z,2019-03-13T17:31:37Z,salinity,temperature,TimeSeries,-9.990000000000001e-29,365.343,https://catalogue.hakai.org/erddap
+0,HakaiCTDPRUTH,51.6554,-128.0913,,,salinity,temperature,TimeSeries,,,https://catalogue.hakai.org/erddap
+0,HakaiCTDQCS01,51.705,-128.2384,,,salinity,temperature,TimeSeries,,,https://catalogue.hakai.org/erddap
+0,HakaiCTDQU20,50.08,-125.1,,,salinity,temperature,TimeSeries,,,https://catalogue.hakai.org/erddap
+0,HakaiCTDQU29,50.2536,-125.1885,,,salinity,temperature,TimeSeries,,,https://catalogue.hakai.org/erddap
+0,HakaiCTDQU34,50.12,-125.1,,,salinity,temperature,TimeSeries,,,https://catalogue.hakai.org/erddap
+0,HakaiCTDQU38,50.1172,-125.2226,,,salinity,temperature,TimeSeries,,,https://catalogue.hakai.org/erddap
+0,HakaiCTDQU39,50.0307,-125.0992,,,salinity,temperature,TimeSeries,,,https://catalogue.hakai.org/erddap
+0,HakaiCTDQU43,50.33921037,-125.1176375,,,salinity,temperature,TimeSeries,,,https://catalogue.hakai.org/erddap
+0,HakaiBaynesSoundBoL5min,49.4716,-124.7927,2020-04-18T06:05:00Z,2020-06-17T05:15:00Z,,"TSG_T_Avg,TSG_T_Med,TSG_T_Min,TSG_T_Std,TSG_T_Max",TimeSeries,,,https://catalogue.hakai.org/erddap
+0,HakaiQuadraBoL5min,50.11600000000001,-125.22200000000001,2020-04-18T06:05:00Z,2020-06-17T05:20:00Z,,"TSG_T_Avg,TSG_T_Med,TSG_T_Min,TSG_T_Std,TSG_T_Max",TimeSeries,,,https://catalogue.hakai.org/erddap
+0,HakaiQuadraLimpet5min,50.11736,-125.22003,,,,"WaterTemp_Avg,WaterTemp_Std",TimeSeries,,,https://catalogue.hakai.org/erddap
+0,HakaiQuadraWeather5min,50.1162556,-125.2221111,2020-04-18T06:10:00Z,2020-06-17T05:15:00Z,,,TimeSeries,,,https://catalogue.hakai.org/erddap
+0,HakaiKCBuoy1hour,51.6499,-127.9663,2020-04-18T07:00:00Z,2020-06-17T05:00:00Z,,"WaterTemp_Avg,WaterTemp_Std,WaterTemp_Med,WaterTemp_Max,WaterTemp_Min,WaterTemp",TimeSeries,,,https://catalogue.hakai.org/erddap
+0,HakaiSitkaBoL5min,57.0526,-135.3456,2020-04-18T06:10:00Z,2020-04-23T18:40:00Z,,"TSG_T_Avg,TSG_T_Med,TSG_T_Min,TSG_T_Std,TSG_T_Max",TimeSeries,,,https://catalogue.hakai.org/erddap
